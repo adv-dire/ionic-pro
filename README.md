@@ -1,4 +1,4 @@
-此项目是基于ionic+angularjs+nodejs开发
+此项目是基于ionic+angularjs+nodejs+mongodb开发
 ==============
 
 实现的功能有：
