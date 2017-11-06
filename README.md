@@ -1,26 +1,20 @@
-Ionic App Base
+此项目是基于ionic+angularjs+nodejs开发
 ==============
 
-A starting project for Ionic that optionally supports using custom SCSS.
+实现的功能有：
 
-## Using this project
+1.登陆注册
+2.写文章、发布文章
+3.对该文章评论、多级评论（回复评论）
+4、查看个人信息、查看作者信息（个人信息、作者的写的文章、收藏、个人信息）、查看评论者信息（评论者写的文章、收藏、个人信息）
+5.对该文章投票、点赞、收藏、感谢
+6、将图书加入书架
 
-We recommend using the [Ionic CLI](https://github.com/ionic-team/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+该项目主要页面有：
+1.首页（显示用户写的文章）
+2.书城（查看书籍信息，加入书架等）
+3.市场（静态页 没有后台数据交互的页面，功能在建设中）
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
 
-```bash
-$ npm install -g ionic cordova
-```
-
-Then run:
-
-```bash
-$ ionic start myProject tabs --type=ionic1
-```
-
-More info on this can be found on the Ionic [Getting Started](https://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/ionic-team/ionic-cli) repo.
-
-## Issues
-
-Issues have been disabled on this repo. If you do find an issue or have a question, consider posting it on the [Ionic Forum](https://forum.ionicframework.com/). If there is truly an error, follow our guidelines for [submitting an issue](https://ionicframework.com/submit-issue/) to the main Ionic repository.
+查看该项目请先打开mongoDB数据库 下载后cd 到serve文件夹下再运行 node/nodemon app.js而后在浏览器输入127.0.0.1：8100
+或者cd到myApp目录下运行ionic cordova run android 手机上预览
