@@ -1,0 +1,22 @@
+<ion-view>
+<div class="bar bar-header bar-positive">
+ <button ng-click="back();" class="button icon ion-close"></button>
+  <h1 class="title">收藏夹</h1>
+ 
+</div>
+<ion-content>
+<div id="shoucang-h">
+<div style="clear:both;"></div>
+<div id="shoucang" ng-repeat = "item in scdata"  ui-sref = "showartice({userid:item._id,user:item.user[0].userID})">
+<p><img src="img/教育1.png"><span>来自话题:教育</span><img src="img/点.png"></p>
+<p>{{item.title}}</p>
+<p>{{item.content}}</p>
+<div><span>{{item.zantong}}&nbsp&nbsp赞同&nbsp.&nbsp</span><span>&nbsp{{item.pinglun.length}}&nbsp&nbsp评论&nbsp&nbsp.&nbsp&nbsp</span>关注问题<span></span></div>
+</div>
+
+</div>
+</ion-content>
+
+</ion-view>
+
+

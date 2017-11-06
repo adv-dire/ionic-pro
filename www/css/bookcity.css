@@ -1,0 +1,26 @@
+#bookcity{
+	width: 100%;
+	background-color:#FDF6F0;
+}
+#bookcity .bar{
+	height: 50px;
+	background-color: #f3f3f1;
+	box-shadow:-3px 0px 8px #f00
+}
+#bookcity .bar i{
+	color: black;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 25px;
+}	
+#bookcity .bar .title{
+	color: black;
+	line-height: 50px;
+}
+#bookcity #content{
+	padding-top: 50px;
+}
+#bookcity #content .list a{
+	background-color: transparent;
+}

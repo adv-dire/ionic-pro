@@ -1,0 +1,31 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="首页" icon-off="ion-android-home" icon-on="ion-android-home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="市场" icon-off="ion-social-skype" icon-on="ion-social-skype" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>
+
+
+ <ion-tab title="书城" icon-off="ion-ios-book-outline" icon-on="ion-ios-book-outline" href="#/tab/bookcity">
+    <ion-nav-view name="tab-bookcity"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="更多" icon-off="ion-android-menu" icon-on="ion-android-menu" href="#/tab/user">
+    <ion-nav-view name="tab-user"></ion-nav-view>
+  </ion-tab>
+
+
+
+
+</ion-tabs>

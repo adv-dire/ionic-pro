@@ -1,0 +1,41 @@
+#Pinfo{
+	width: 100%;
+}
+#Pinfo .bar{
+	height: 70px;
+	box-shadow:-3px 0px 8px #f00
+}
+ #Pinfo .bar .button:nth-child(1){
+ 	height: 30px;
+ 	line-height: 30px;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+ }
+ #Pinfo .bar .button:nth-of-type(2){
+ 	height: 30px;
+ 	line-height: 30px;
+ 	margin-top: 10px;
+ 	margin-right: 10px;
+ }
+ #Pinfo .bar h1{
+ 	height: 60px;
+ 	line-height: 40px;
+ 	margin-top: 10px;
+ 	margin-right: 10px;
+ }
+ #Pinfo .info{
+ 	width: 100%;
+
+ }
+ #Pinfo #userinfo{
+ 	margin-top: 60px;
+ }
+ #Pinfo #userinfo .icon{
+ 	font-size: 30px;
+ }
+ #Pinfo #userinfo #in{
+ 	color: black;
+ 	font-size: 18px;
+ 	font-family: "黑体";
+ 	font-weight: 200;
+ }

@@ -1,0 +1,73 @@
+<ion-view id = "showuserinfo">
+
+<div class="bar bar-header bar-positive">
+ 
+   <div id="search_box" >
+     <p><span ng-click="back();"><i class="ion-arrow-left-c"></i></span><span>{{userdata.name}}</span></p>
+  <div class="row">
+  <div class="col col-33" >个人信息</div>
+  <div class="col col-33">他的收藏</div>
+  <div class="col col-33">他的文章</div>
+</div>
+</div>
+</div>
+<div class="swiper-container" id="showperinfo">
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-person placeholder-icon"></i>
+    <input name="name" ng-model="userinfo.name" id="in" type="text" placeholder="{{userdata.name}}" ><span id ="miaowz">他/她的姓名</span>
+  </label>
+</div>
+<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-android-bicycle placeholder-icon"></i>
+    <input id="in" ng-model="userinfo.aihao" type="text" placeholder="{{userdata.aihao}}" value="sdadasdasdad"><span id ="miaowz">他/她的爱好</span>
+  </label>
+</div>
+<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="ion-university placeholder-icon"></i>
+    <input id="in" type="text" placeholder="{{userdata.xl}}"><span id ="miaowz">他/她的学历</span>
+  </label>
+</div>
+<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-social-snapchat placeholder-icon"></i>
+    <input id="in" type="text" placeholder="{{userdata.initr}}"><span id ="miaowz">他/她的自我介绍</span>
+  </label>
+</div>
+      </div>
+        <div class="swiper-slide">
+        	<ion-content >
+
+			<div style="clear:both;"></div>
+			<div id="shoucang" ng-repeat = "item in scdata"  ui-sref = "showartice({userid:item._id,user:item.user[0].userID})">
+			<p><img src="img/教育1.png"><span>来自话题:教育</span><img src="img/点.png"></p>
+			<p>{{item.title}}</p>
+			<p>{{item.content}}</p>
+			<div><span>22&nbsp&nbsp赞同&nbsp.&nbsp</span><span>&nbsp2&nbsp&nbsp评论&nbsp&nbsp.&nbsp&nbsp</span>关注问题<span></span></div>
+			</div>
+
+
+</ion-content>
+        </div>
+        <div class="swiper-slide">
+        	<ion-content >
+			<div style="clear:both;"></div>
+			<div id="shoucang" ng-repeat = "item in wzdata"  ui-sref = "showartice({userid:item._id,user:item.user[0].userID})">
+			<p><img src="img/教育1.png"><span>来自话题:教育</span><img src="img/点.png"></p>
+			<p>{{item.title}}</p>
+			<p>{{item.content}}</p>
+			<div><span>22&nbsp&nbsp赞同&nbsp.&nbsp</span><span>&nbsp2&nbsp&nbsp评论&nbsp&nbsp.&nbsp&nbsp</span>关注问题<span></span></div>
+			</div>
+			</ion-content>
+        </div>
+    </div>
+
+</div>
+
+
+</ion-view>

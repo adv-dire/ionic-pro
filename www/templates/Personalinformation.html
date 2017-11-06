@@ -1,0 +1,60 @@
+<ion-view id="Pinfo">
+<div class="bar bar-header bar-balanced">
+ <button ng-click="back();" class="button icon ion-close"></button>
+  <h1 class="title">{{title == false ? '个人资料' : titlew}}</h1>
+  <button ng-click="submit();" class="button ion-checkmark" ></button>
+</div>
+  <ion-content id="userinfo">
+<div class="info">
+	<form>
+	<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-person placeholder-icon"></i>
+    <input name="name" ng-model="userinfo.name" id="in" type="text" placeholder="姓名" value="gaojiehao" >
+  </label>
+</div>
+<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-android-bicycle placeholder-icon"></i>
+    <input id="in" ng-model="userinfo.aihao" type="text" placeholder="喜欢做什么/爱好" value="sdadasdasdad">
+  </label>
+</div>
+<div class="list list-inset">
+  	<label class="item item-input">
+    <i class="icon ion-social-snapchat placeholder-icon"></i>
+    <input id="in" ng-model="userinfo.initr" type="text" placeholder="一句好描述自己">
+  </label>
+</div>
+<div class="list list-inset">
+   <ion-list>
+  <ion-radio name="nan" ng-model="sex.choice" ng-value="'男'">男</ion-radio>
+  <ion-radio name="nv" ng-model="sex.choice" ng-value="'女'">女</ion-radio>
+</ion-list>
+</div>
+<div class="list list-inset">
+   <ion-list>
+  <ion-radio name="gao" ng-model="xl.choice" ng-value="'专科'">专科</ion-radio>
+  <ion-radio name="gao" ng-model="xl.choice" ng-value="'大学'">大学</ion-radio>
+<ion-radio name="gao" ng-model="xl.choice" ng-value="'研究生'">研究生</ion-radio>
+<ion-radio name="gao" ng-model="xl.choice" ng-value="'博士'">博士</ion-radio>
+<ion-radio name="gao" ng-model="xl.choice" ng-value="'其他'">其他</ion-radio>
+
+</ion-list>
+
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-android-pin placeholder-icon"></i>
+    <input type="text" ng-model="userinfo.adress" placeholder="地址">
+  </label>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input ng-model="userinfo.guanzhu" type="text" placeholder="最关注什么">
+  </label>
+</div>
+	</form>
+</div>
+</ion-content>
+</ion-view>

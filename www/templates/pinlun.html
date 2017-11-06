@@ -1,0 +1,35 @@
+<ion-view id="pinglun">
+<div class="bar bar-header bar-positive">
+ <button ng-click="back();" class="button icon ion-close"></button>
+  <h1 class="title">评论区</h1>
+  <button ng-click="submit();" class="button ion-checkmark" ></button>
+</div>
+<ion-content id = "content">
+ <ion-refresher
+  pulling-text="下拉刷新..."
+  on-refresh="doRefresh()">
+  </ion-refresher>
+<div class="pl">
+	<div class="item item-avatar"  ng-repeat = 'item in pinglunlist'    ng-click="huifu($event,item.username,item.pluser[0].userID , item._id);">
+    <img src="img/头像.jpg" ng-click="showuser(item.pluser[0].userID,$event);">
+    <h2>{{item.username}}</h2>
+    <p id="plwz">{{item.plcontent}}</p>
+    <!--ng-click="huifulist($event);"-->
+    <p id="bottom"><span>{{item.pldate}}</span><span ui-sref = "Reply({articeid:xdactive,userid:item.pluser[0].userID,plcontent:item.plcontent})" >对话列表</span><span ng-click="dianzan($index,item._id,$event);"><i ng-class="{false:'ion-thumbsup dianzan' , true:'ion-thumbsup dianzancolor'}[$index==dianzansl?true:false]"></i> 443</span></p>
+  </div>
+</div>
+ <ion-infinite-scroll  ng-if="newsList.hasmore" on-infinite="loadMore()" distance="10%"> 
+  </ion-infinite-scroll>
+</ion-content>
+  <div class="list" id="foot">
+
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input  focus-me="shouldBeOpen" id="input" type="text" style="width:100%;" placeholder="{{username}}" ng-model="pinglun">
+    </label>
+    <i ng-click="submit();" class="ion-android-send"></i>
+    
+  </div>
+
+</div>
+</ion-view>

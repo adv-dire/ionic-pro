@@ -1,0 +1,43 @@
+<ion-view id="home">
+<div class="bar bar-header bar-positive">
+ 
+   <div id="search_box" >
+     <input type="text"placeholder="说你想说">
+  <div class="row">
+  <div class="col col-33" >动态</div>
+  <div class="col col-33">热门</div>
+  <div class="col col-33">发现</div>
+</div>
+</div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="dongtai-info">
+         <ion-content id="content" overflow-scroll = "false">
+          <ion-refresher
+          pulling-text="下拉刷新..."
+          on-refresh="doRefresh()">
+          </ion-refresher>
+          <div class="dongtai-info-content" ng-repeat = "articeitem in artice" ui-sref = "showartice({userid:articeitem._id,user:articeitem.user[0].userID})">
+            <p><img src="img/教育1.png"><span>来自话题:教育</span><img src="img/点.png"></p>
+            
+            <div>{{articeitem.title}}</div>
+            <div>{{articeitem.content}}</div>
+           <div><span>{{articeitem.zantong}}&nbsp&nbsp赞同&nbsp.&nbsp</span><span>&nbsp{{articeitem.pinglun.length}}&nbsp&nbsp评论&nbsp&nbsp.&nbsp&nbsp</span>关注问题<span></span></div>
+          </div>
+          <ion-infinite-scroll  ng-if="newsList.hasmore" on-infinite="loadMore()" distance="10%"> 
+          </ion-infinite-scroll>
+
+          </ion-content>
+
+        </div>
+      </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+
+</div>
+ <div ng-if="bool" style="margin-top:-80px; font-size:18px; font-weight:500; font-family:'黑体' ;text-align:center">没有更多内容了</div>
+</ion-view>

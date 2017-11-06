@@ -1,0 +1,83 @@
+<ion-view id="indi"  cache-view="false">
+
+<div class="bar bar-header bar-positive">
+ 
+   <div id="search_box" >
+     <input type="text"placeholder="说你想说">
+</div>
+
+</div>
+  <ion-content>
+  <div id="indi_main">
+
+ <div class="login_chunk" ng-if="login">
+
+
+    <div class="login_right">
+      <p>登陆SHARE,体验更多功能</p>
+      <div class="row">
+  <div ui-sref="login" class="col col-25"><img src="img/手机.png"/></div>
+  <div class="col col-25"><img src="img/微信.png"/></div>
+  <div class="col col-25"><img src="img/微博.png"/></div>
+  <div class="col col-25"><img src="img/QQ.png"/></div>
+</div>
+    </div>
+   </div>
+
+
+   <div class="indi_one" ng-if="logined">
+    <div class="indi_one_left" ng-click='uploadimg();'>
+      <img ng-src="{{img.url}}"/>
+    </div>
+    <div ng-click="info();" class="indi_one_right">
+      <p>人生需要走</p>
+      <p>查看或编辑个人主页</p>
+    </div>
+   </div>
+   <div class="indi_two">
+   <div ng-click="myartice();" class="indi_two_list">
+    <i class="ion ion-edit"></i>
+    <p>我的创作</p>
+   </div>
+   <div class="indi_two_list" ng-click="shoucang();">
+    <i class="ion ion-android-star" style='color:orange'></i>
+    <p >我的收藏</p>
+   </div>
+   <div class="indi_two_list">
+    <i class="ion ion-ios-eye"></i>
+    <p>我的关注</p>
+   </div>
+   </div>
+</div>
+   <!--
+   复制1
+   -->
+    <div class="indi_two">
+   <div class="indi_two_list">
+    <i class="ion ion-bag" style='color:pink'></i>
+    <p>易购买内容</p>
+   </div>
+   <div class="indi_two_list">
+    <i class="ion ion-record ion-android-star" style='color:blue'></i>
+    <p>我的Live</p>
+   </div>
+   <div class="indi_two_list">
+    <i class="ion ion-ios-book-outline"></i>
+    <p>我的书架</p>
+   </div>
+    <div class="indi_two_list" ng-click="artice();">
+    <i class="ion ion-ios-chatbubble"></i>
+    <p>我要写文章</p>
+   </div>
+    <div class="indi_two_list">
+    <i class="ion ion-ios-folder"></i>
+    <p>我的余额</p>
+   </div>
+    <div class="indi_two_list" ng-if="visible">
+    <i class="ion ion-cash"></i>
+    <p ng-click="loginout();">退出登录</p>
+   </div>
+   </div>
+  </ion-content>
+</ion-view>
+

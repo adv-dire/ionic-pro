@@ -1,0 +1,63 @@
+#Reply{
+	width: 100%;
+}
+#Reply .bar{
+	height: 52px;
+	box-shadow:-3px 0px 8px #f00;
+}
+#Reply #Reply-content .pl{
+	width: 100%;
+	padding-top: 52px;
+}
+#Reply #Reply-content .pl .item{
+	padding-bottom: 7px;
+	border-bottom: none;
+	border-top:0;
+}
+#Reply #Reply-content .pl #plwz{
+	width: 100%;
+	margin-top: 7px;
+	line-height: 20px;
+	font-weight: 200;
+	font-size: 13.5px;
+	font-family: "宋体";
+	color:black;
+	overflow: visible;
+	white-space:normal;
+	text-overflow:clip;
+
+}
+#Reply #Reply-content .pl #bottom{
+	position: relative;
+	width: 100%;
+	line-height: 20px;
+	font-weight: 200;
+	font-size: 13px;
+	font-family: "宋体";
+	color:black;
+	overflow: visible;
+	white-space:normal;
+	text-overflow:clip;
+	margin-top: 5px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #DDDDDD;
+
+}
+#Reply #Reply-content .pl #bottom span:nth-child(1){
+	font-size: 10px;
+	color: gray;
+	display: inline-block;
+}
+#Reply #Reply-content .pl #bottom span:nth-child(2){
+	font-size: 10px;
+	color: gray;
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+}
+.dianzancolor{
+	color: blue;
+}
+.dianzan{
+	color: "";
+}

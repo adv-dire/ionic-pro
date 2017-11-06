@@ -1,0 +1,27 @@
+<ion-view id="Reply">
+<div class="bar bar-header bar-positive">
+ <button ng-click="reback();" class="button ion-arrow-left-c"></button>
+  <h1 class="title">评论区</h1>
+  <button ng-click="submit();" class="button ion-checkmark" ></button>
+</div>
+<ion-content id="Reply-content">
+<div class="pl">
+	<div class="item item-avatar" >
+    <img src="img/头像.jpg">
+    <h2>{{data.username}}</h2>
+    <p id="plwz">{{data.plcontent}}</p>
+    <p id="bottom"><span>{{data.pldate}}</span><span><i class="ion-thumbsup"></i> 443</span></p>
+  </div>
+  <div class="item item-avatar" ng-repeat = "item in huifupldata | orderBy : '-hfdate'" >
+    <img src="img/头像.jpg">
+    <h2>'(回复者)'{{item.huifuuser[0].name}}</h2>
+    <p id="plwz">{{item.huifucontent}}</p>
+    <p id="bottom"><span>{{item.hfdate}}</span><span><i class="ion-thumbsup"></i> 443</span></p>
+  </div>
+</div>
+
+</ion-content >
+
+</ion-view>
+
+

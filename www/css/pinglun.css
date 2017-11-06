@@ -1,0 +1,65 @@
+#pinglun{
+	width: 100%;
+}
+#pinglun .bar{
+	height: 52px;
+	box-shadow:-3px 0px 8px #f00;
+}
+#pinglun #content .pl{
+	width: 100%;
+	margin-top: 52px;
+}
+#pinglun #content .pl{
+	width: 100%;
+}
+#pinglun #content .pl #plwz{
+	width: 100%;
+	line-height: 20px;
+	font-weight: 200;
+	font-size: 13.5px;
+	font-family: "宋体";
+	color:black;
+	overflow: visible;
+	white-space:normal;
+	text-overflow:clip;
+}
+#pinglun #content .pl #bottom{
+	position: relative;
+	width: 100%;
+	line-height: 20px;
+	font-weight: 200;
+	font-size: 13px;
+	font-family: "宋体";
+	color:black;
+	overflow: visible;
+	white-space:normal;
+	text-overflow:clip;
+}
+#pinglun #content .pl #bottom span:nth-child(1){
+	font-size: 10px;
+	color: gray;
+	display: inline-block;
+}
+#pinglun #content .pl #bottom span:nth-child(2){
+	font-size: 10px;
+	color: gray;
+	display: inline-block;
+	padding-left: 30px;
+}
+#pinglun #content .pl #bottom span:nth-child(3){
+	font-size: 10px;
+	color: gray;
+position: absolute;
+	right: 10px;
+}
+#pinglun #foot{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#pinglun #foot i{
+	font-size: 25px;
+	margin-left: 5px;
+	color: gray;
+}

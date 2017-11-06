@@ -1,0 +1,37 @@
+<ion-view id="allbookcity">
+    <ion-content> 
+<div class="bannerimg">
+<div class="swiper-container" id="bannerbook">
+        <div class="swiper-wrapper" >
+        <div ng-repeat = 'bookimg in purdata' class="swiper-slide"><img ng-src="{{bookimg.ImgUrl}}"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="swiper-container" id="allbookinfo">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide stop-swiping" ng-repeat = 'bookitem in purdata'>
+        <div id="bookinfo">
+        <div id="allbookinfo-book">
+        <p>{{bookitem.title}}</p>
+        <p>{{bookitem.author}}</p>
+        <p><span>{{bookitem.dushuliang}}</span><span>人阅读</span></p>
+        <p>{{bookitem.title}}</p>
+        <button>阅读</button>
+        </div>
+        <div id="pingjia" >
+            <mystarselect level="evaluateLevel"></mystarselect>
+            <p>快来点评吧</p>
+        </div>
+        </div>
+    
+    </div>
+  </div>
+</div>
+
+</ion-content>
+<div class="bar bar-footer">
+  <i class="button ion-reply-all pull-left" ng-click="back();"></i>
+  <i ng-click="jiarubookjia();" class="button ion-stats-bars pull-right"><span>加入书架</span></i>
+</div>
+</ion-view>

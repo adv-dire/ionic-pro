@@ -1,0 +1,90 @@
+         #shoucang-h{
+            width: 100%;
+           background: rgb(226,226,237);
+            height: 100%;
+            float: left;
+            padding-top: 48px;
+         }
+         #shoucang{
+            width: 100%;
+            height: 100%;
+            background:rgb(243,243,241);
+
+            margin-bottom: 5px;
+         }
+        
+        #shoucang  > p:nth-of-type(1){
+    	width: 100%;
+    	height: 20px;
+    	padding-top: 5px;
+    }
+     #shoucang  > p:nth-of-type(1) > img:nth-of-type(1){
+     	display: block;
+        width: 20px;
+        height: 20px;
+     	float: left;
+     	margin-left: 15px;
+        border-radius: 50%;
+        border: 1px blue solid;
+
+     }
+      #shoucang  > p:nth-of-type(1) > span{
+     	display: block;
+     	float: left;
+     	height: 20px;
+     	line-height: 20px;
+     	margin-left: 20px;
+     	font-family: "黑体";
+     	font-size: 14px;
+     	color: gray;
+     }
+     #shoucang  p:nth-of-type(1) > img:nth-of-type(2){
+     	float: right;
+     	margin-right: 15px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+     }
+      #shoucang  > p:nth-of-type(2){
+        width: 95%;
+        height: 20px;
+        white-space:nowrap; text-overflow:ellipsis;
+         -o-text-overflow:ellipsis; 
+         overflow:hidden;
+        font-family: "黑体";
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: 300;
+        padding-left: 15px;
+        margin-bottom: 5px;
+              }
+       #shoucang  > p:nth-of-type(3){
+         margin-bottom: 5px;
+         width: 95%;
+         margin-top: 0px;
+         padding-left: 15px;
+         font-size: 13px;
+         font-family: "宋体";
+         color: #232326;
+         font-weight: 300;
+         height: 60px;
+         overflow: hidden;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+    }
+
+      #shoucang div:nth-of-type(1){
+        width: 100%;
+        margin-top:0px;
+        height: 20px;
+        line-height: 20px;
+        padding-left: 15px;
+        font-size: 13px;
+        color: #B7BBBF;
+        clear: both;
+        margin-bottom: 5px;
+      }

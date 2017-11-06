@@ -1,0 +1,55 @@
+<div id="infortice">
+	<div class="bar bar-header bar-balanced">
+ <button ng-click="back();" class="button ion-arrow-left-c"></button>
+ <span ng-click="showAlert();">{{title}}</span>
+  <button ng-click="submit();" class="button ion-navicon-round" ></button>
+</div>
+<ion-content id="content" on-scroll-complete= "hq();" delegate-handle="mainScroll" overflow:scroll = 'false'>
+<div class="userinfo">
+	<div class="list">
+    <div class="item item-avatar">
+      <img src="img/头像.jpg" ng-click="lookuserinfo();">
+      <h2>{{usertitle}}</h2>
+      <p>{{usermiaoshu}}</p>
+    </div>
+</div>
+
+<div ng-bind-html="description"  class="infortice-content"></div>
+</div>
+</ion-content>
+<div ng-if="bool" id="footer" class="bar bar-footer">
+  <div class="row">
+ <div class="col">
+  	<div>
+ 	<p id="toupiao" ng-class="{false : 'toupiao1' , true : 'toupiao'}[zantonbool]" ng-click="zantong();">
+ 		<i  ng-class="{ false : 'ion-arrow-up-b shang' , true : 'ion-arrow-up-b green'}[zantonbool]"></i>
+
+ 		<i  ng-class="{ false : 'ion-arrow-down-b xia' , true : 'ion-arrow-down-b red'}[zantonbool]"></i>
+
+ 		<span ng-class = "{false : 'zt' , true : 'tz'}[zantonbool]">{{ztshu}}</span>
+ 	</p> 	
+  	</div>
+ </div>
+  <div class="col">
+  <div class="ganxie" ng-click="ganxieh();">
+  	<i ng-class="{true:'ion-android-favorite-outline',false:'ion-heart'}[ganxie]"></i>
+
+  	<span>{{ganxiewz}}</span>
+  </div>
+  </div>
+  <div class="col">
+  	 <div class="shoucang" ng-click="shoucangx();">
+  	<i ng-class="{true : 'ion-android-star-outline' , false : 'ion-ios-star'}[shoucang]"></i>
+  	<span>{{shoucangwz}}</span>
+  </div>
+  </div>
+  <div class="col">
+   <div class="pinglun" ng-click="pinglun();">
+  	<i class="ion-ios-compose-outline"></i>
+  	<span >评论</span>
+  </div>
+  	
+  </div>
+</div>
+</div>
+</div>
